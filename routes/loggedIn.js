@@ -1,11 +1,13 @@
 var data = require('../data.json');
 exports.viewLoggedIn = function(req, res){
-    data['viewAlt'] = false;
+    data['viewLoggedInAlt'] = false;
+    console.log(data['viewLoggedInAlt']);
     res.render('loggedIn', {"pictures": data});
   };
 
 exports.viewLoggedInAlt = function(req, res){
   data['viewLoggedInAlt'] = true;
+  console.log(data['viewLoggedInAlt']);
   res.render('loggedIn', {"pictures": data});
 }
 

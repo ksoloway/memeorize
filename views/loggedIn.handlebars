@@ -50,7 +50,7 @@ ga('send', 'pageview');
     </form>
   </div>
 
-  {{#each pictures}}
+  {{#each pictures.memes}}
   <div class="main" style="padding-top: 15px; padding-bottom: 15px; text-align: center; padding: 60px;">
     <table class ="corner" border="1">
       <th>
@@ -88,15 +88,13 @@ ga('send', 'pageview');
       <div class="col-sm-4" style="text-align: center;">
        <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars"><i class="far fa-plus-square" style="font-size: 80px;"></i></button>
       </div>
-      {{#if viewAlt}}
+      {{#if pictures.viewLoggedInAlt}}
       <div class="col-sm-4" style="text-align: center;">
         <button style="width: 50%;" type="button" id = "login-profile-button" href="loggedin.handlebars"><i class="fas fa-home" style="font-size: 80px;" ></i></button>
-        }
       </div>
       {{else}}
       <div class="col-sm-4" style="text-align: center;">
         <button style="width: 50%;" type="button" id = "login-profile-button" href="loggedin.handlebars"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
-        }
       </div>
       {{/if}}
     </div>
