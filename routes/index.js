@@ -6,8 +6,14 @@ var data = require('../data.json');
  */
 
 exports.view = function(req, res){
-  res.render('index', {"pictures": data.memes});
+  data['viewAlt'] = false;
+  res.render('index', {"pictures": data});
 };
+
+exports.viewAlt = function(req, res){
+  data['viewAlt'] = true;
+  res.render('index', {"pictures": data});
+}
 
 exports.search = function(req, res){
   console.log("reached");
