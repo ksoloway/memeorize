@@ -1,7 +1,9 @@
 var data = require('../data.json');
 exports.viewLoggedIn = function(req, res){
-    res.render('loggedIn', {"pictures": data.memes});
+    data['viewAlt'] = false;
+    res.render('loggedIn', {"pictures": data});
   };
+
 
 exports.loginSearch = function(req, res){
   console.log("reached");
