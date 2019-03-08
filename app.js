@@ -48,9 +48,11 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/search', index.search);
 app.get('/upload', upload.viewUpload);
+app.get('/uploadAlt', upload.viewUploadAlt);
 app.get('/uploadImg', uploadImg.addFriend);
 app.get('/login', login.viewLogin);
 app.get('/loggedIn',loggedIn.viewLoggedIn);
+app.get('/loggedInAlt', loggedIn.viewLoggedInAlt);
 app.get('/loginSearch', loggedIn.loginSearch);
 app.get('/subjects', subjects.viewSubjects);
 app.get('/help', help.viewHelp);

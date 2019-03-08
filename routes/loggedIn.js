@@ -4,6 +4,11 @@ exports.viewLoggedIn = function(req, res){
     res.render('loggedIn', {"pictures": data});
   };
 
+exports.viewLoggedInAlt = function(req, res){
+  data['viewLoggedInAlt'] = true;
+  res.render('loggedIn', {"pictures": data});
+}
+
 
 exports.loginSearch = function(req, res){
   console.log("reached");

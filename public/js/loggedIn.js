@@ -41,7 +41,7 @@ $( ".cross" ).click(function() {
 });
 
 $('#login-profile-button').click(function(){
-  e.preventDefault();
+  //e.preventDefault();
   console.log("yo");
   ga('create', 'UA-135898318-1', 'auto');
   ga("send", "event", "like", "click");

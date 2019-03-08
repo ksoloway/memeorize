@@ -5,6 +5,8 @@ $(document).ready(function() {
   });
 
   $("#upload").click(function(){
+    ga('create', 'UA-135898318-1', 'auto');
+    ga("send", "event", "like", "click");
     console.log(document.getElementById("uploadedImg").src);
     console.log($("#memeSubject option:selected").text());
     json = {

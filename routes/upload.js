@@ -1,9 +1,11 @@
  var data = require("../data.json");
 
 exports.viewUpload = function(req, res){
-    res.render('upload');
+	data['viewUploadAlt'] = false;
+    res.render('upload', {"pictures": data});
 };
 
 exports.viewUploadAlt = function(req, res){
-	res.render('upload', viewUploadAlt)
+	data['viewUploadAlt'] = true;
+	res.render('upload', {"pictures": data})
 }
