@@ -17,7 +17,9 @@ var subjects = require("./routes/subjects");
 var help = require("./routes/help");
 var helpNL = require("./routes/helpNL");
 var subjectsNL = require("./routes/subjectsNL");
+var uploadA = require("./routes/uploadA");
 var uploadB = require("./routes/uploadB");
+var loggedInA = require("./routes/loggedInA");
 var loggedInB = require("./routes/loggedInB");
 
 // Example route
@@ -60,7 +62,9 @@ app.get('/helpNL', helpNL.viewHelpNL);
 app.get('/subjectsNL', subjectsNL.viewSubjectsNL);
 app.get('/searchSubjectsNL', subjectsNL.searchSubjectsNL);
 app.get('/searchSubjects', subjects.searchSubjects);
+app.get('/loggedInA', loggedInA.viewLoggedIn);
 app.get('/loggedInB',loggedInB.viewLoggedIn);
+app.get('/uploadA', uploadA.viewUploadA);
 app.get('/uploadB', uploadB.viewUpload);
 // Example route
 // app.get('/users', user.list);
