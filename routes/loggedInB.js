@@ -1,6 +1,6 @@
 var data = require('../data.json');
 exports.viewLoggedIn = function(req, res){
-    res.render('loggedIn', {"pictures": data.memes});
+    res.render('loggedInB', {"pictures": data.memes});
   };
 
 exports.loginSearch = function(req, res){
@@ -18,5 +18,5 @@ exports.loginSearch = function(req, res){
   {
     parsed = data.memes;
   }
-  res.render('loggedIn', {"pictures": parsed});
+  res.render('loggedInB', {"pictures": parsed});
 }
