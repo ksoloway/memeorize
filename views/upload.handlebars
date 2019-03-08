@@ -50,14 +50,6 @@ ga('send', 'pageview');
         <h4 style="font-size: 50px; padding-left: 200px; padding-top: 15px; font-family:times"><b><i>Upload Your Meme</i></b></h4>
       </div>
       <form id="completeForm" role="form" action="/uploadImg">
-      <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" type="button" id = "login-profile-button" href="loggedin.handlebars"><i class="fas fa-home" style="font-size: 80px;" ></i></button>
-        }
-      </div>
-      <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" type="button" id = "login-profile-button" href="loggedin.handlebars"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
-        }
-      </div>
     </div>
   </div>
 </nav>
@@ -103,24 +95,6 @@ ga('send', 'pageview');
 
 <div style="padding-bottom: 500px;"></div>
 
-<!--Footer-->
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
-    <div class="row">
-        <div class="col-sm-4" style="text-align: center;">
-        <button id="help" style="width: 50%; "  href="help.handlebars" type="button"><i class="far fa-question-circle" style="font-size: 80px;"></i></button>
-      </div>
-      <div class="col-sm-4" style="text-align: center;">
-       <button style="width: 50%;" id="uploadMainButton" type="button" href="upload.handlebars"><i class="far fa-plus-square" style="font-size: 80px;"></i></button>
-      </div>
-      <div class="col-sm-4" style="text-align: center;">
-        <button style="width: 50%;" type="button" id = "login-profile-button"><i class="fas fa-user" style="font-size: 80px;" ></i></button>
-      </div>
-    </div>
-  </div>
-</nav>
-<!--End of Footer-->
-</body>
 {{else}}
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px;">
@@ -176,7 +150,7 @@ ga('send', 'pageview');
 </div>
 
 <div style="padding-bottom: 200px;"></div>
-
+{{/if}}
 <!--Footer-->
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid" style="padding-top: 40px; padding-bottom: 40px;">
@@ -194,5 +168,6 @@ ga('send', 'pageview');
   </div>
 </nav>
 <!--End of Footer-->
-{{/if}}
+
+</body>
 </html>
